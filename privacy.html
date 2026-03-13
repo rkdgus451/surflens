@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>개인정보처리방침 – SurfLens AI</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #0d1117;
+      --surface: #161b22;
+      --border: #21262d;
+      --accent: #6366f1;
+      --accent-dim: rgba(99,102,241,0.12);
+      --text: #e6edf3;
+      --muted: #8b949e;
+      --mono: 'SF Mono', 'Fira Code', monospace;
+    }
+
+    body {
+      font-family: 'Noto Sans KR', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.8;
+      min-height: 100vh;
+    }
+
+    header {
+      border-bottom: 1px solid var(--border);
+      padding: 1.5rem 2rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      position: sticky;
+      top: 0;
+      background: rgba(13,17,23,0.85);
+      backdrop-filter: blur(12px);
+      z-index: 10;
+    }
+
+    .logo-mark {
+      width: 36px; height: 36px;
+      background: var(--accent);
+      border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 0 20px rgba(99,102,241,0.4);
+      font-size: 18px;
+    }
+
+    .logo-text {
+      font-size: 1.1rem;
+      font-weight: 900;
+      letter-spacing: -0.03em;
+      text-transform: uppercase;
+      font-style: italic;
+    }
+
+    .logo-text span { color: var(--accent); }
+
+    main {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 4rem 2rem 6rem;
+    }
+
+    .hero {
+      margin-bottom: 3rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .badge {
+      display: inline-block;
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--accent);
+      background: var(--accent-dim);
+      border: 1px solid rgba(99,102,241,0.3);
+      padding: 0.3rem 0.8rem;
+      border-radius: 999px;
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      font-weight: 900;
+      letter-spacing: -0.04em;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+    }
+
+    .meta {
+      font-size: 0.8rem;
+      color: var(--muted);
+      font-family: var(--mono);
+    }
+
+    section {
+      margin-bottom: 2.5rem;
+    }
+
+    h2 {
+      font-size: 1rem;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    h2::before {
+      content: '';
+      display: inline-block;
+      width: 3px;
+      height: 1em;
+      background: var(--accent);
+      border-radius: 2px;
+    }
+
+    p {
+      font-size: 0.92rem;
+      color: #c9d1d9;
+      margin-bottom: 0.8rem;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      font-size: 0.92rem;
+      color: #c9d1d9;
+      padding: 0.4rem 0 0.4rem 1.2rem;
+      position: relative;
+    }
+
+    ul li::before {
+      content: '—';
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 1.5rem 1.8rem;
+      margin-top: 0.5rem;
+    }
+
+    .contact-row {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      font-size: 0.85rem;
+      color: var(--muted);
+      padding: 0.5rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .contact-row:last-child { border-bottom: none; }
+
+    .contact-label {
+      font-weight: 700;
+      color: var(--text);
+      min-width: 80px;
+      font-size: 0.8rem;
+      letter-spacing: 0.05em;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.75rem;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+      font-family: var(--mono);
+      letter-spacing: 0.1em;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo-mark">🌊</div>
+  <div class="logo-text">SurfLens <span>AI</span></div>
+</header>
+
+<main>
+  <div class="hero">
+    <div class="badge">Privacy Policy</div>
+    <h1>개인정보<br/>처리방침</h1>
+    <p class="meta">시행일자: 2026-03-13 &nbsp;|&nbsp; 버전: 1.0.0</p>
+  </div>
+
+  <section>
+    <h2>수집하는 개인정보</h2>
+    <p>SurfLens AI는 서비스 제공을 위해 아래 정보를 수집할 수 있습니다.</p>
+    <ul>
+      <li>서핑 프로필 입력값 (키, 체중, 성별, 실력 수준 등)</li>
+      <li>선호 서핑 스팟 및 장비 정보</li>
+      <li>서비스 이용 기록 및 접속 로그</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>개인정보 수집 및 이용 목적</h2>
+    <ul>
+      <li>AI 기반 서핑 보드 맞춤 추천 서비스 제공</li>
+      <li>서비스 품질 개선 및 오류 분석</li>
+      <li>통계 분석 (비식별화 처리 후 활용)</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>개인정보 보유 및 이용 기간</h2>
+    <p>수집된 개인정보는 서비스 이용 목적 달성 후 즉시 파기합니다. 단, 관련 법령에 따라 보존이 필요한 경우 해당 기간 동안 보관합니다.</p>
+    <ul>
+      <li>서비스 이용 기록: 3개월</li>
+      <li>접속 로그: 1년 (통신비밀보호법)</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>제3자 서비스 이용</h2>
+    <p>SurfLens AI는 아래 외부 서비스를 활용합니다. 입력하신 프로필 데이터는 AI 분석을 위해 해당 서비스로 전송될 수 있습니다.</p>
+    <ul>
+      <li>Google Gemini AI API — AI 추천 생성</li>
+      <li>Vercel — 서비스 호스팅</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>개인정보 파기 절차 및 방법</h2>
+    <p>전자적 파일 형태로 저장된 개인정보는 기록을 재생할 수 없는 기술적 방법으로 삭제합니다.</p>
+  </section>
+
+  <section>
+    <h2>이용자의 권리</h2>
+    <ul>
+      <li>개인정보 열람, 정정, 삭제 요청 가능</li>
+      <li>개인정보 처리 정지 요청 가능</li>
+      <li>불만 사항은 아래 연락처로 문의 가능</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>개인정보 보호책임자</h2>
+    <div class="card">
+      <div class="contact-row">
+        <span class="contact-label">서비스명</span>
+        <span>SurfLens AI</span>
+      </div>
+      <div class="contact-row">
+        <span class="contact-label">운영자</span>
+        <span>서프렌즈 / 헨리의서핑보드</span>
+      </div>
+      <div class="contact-row">
+        <span class="contact-label">시행일</span>
+        <span>2026년 3월 13일</span>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  SURFLENS AI © 2026 &nbsp;·&nbsp; PRIVACY POLICY v1.0
+</footer>
+
+</body>
+</html>
