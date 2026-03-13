@@ -34,7 +34,7 @@ export const getLongboardRecommendation = async (profile: UserProfile): Promise<
   `;
 
   const response = await ai.models.generateContent({
-    model: 'gemini-2.0-flash',
+    model: 'gemini-2.5-flash',
     contents: prompt,
     config: {
       systemInstruction: `당신은 대한민국 최고 권위의 서핑 데이터 분석가 'SurfLens AI'입니다. 
@@ -128,7 +128,7 @@ export const getSpecificBoardAnalysis = async (profile: UserProfile, query: stri
   `;
 
   const response = await ai.models.generateContent({
-    model: 'gemini-2.0-flash',
+    model: 'gemini-2.5-flash',
     contents: prompt,
     config: {
       systemInstruction: "당신은 서핑 보드 엔지니어 관점에서 특정 보드가 사용자에게 적합한지 분석하는 'SurfLens 전문 분석가'입니다. 매우 구체적이고 기술적인 근거를 들어 답변하세요.",
